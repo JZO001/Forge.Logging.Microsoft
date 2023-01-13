@@ -12,14 +12,6 @@ namespace Forge.Logging.Microsoft
 
         private readonly ILogger mLog;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MSLog" /> class.
-        /// DO NOT USE THIS CONSTRUCTOR. This is for avoid IOC validation error.
-        /// </summary>
-        public MSLog()
-        {
-        }
-
         /// <summary>Initializes a new instance of the <see cref="MSLog" /> class.</summary>
         /// <param name="log">The log.</param>
         public MSLog(ILogger log)

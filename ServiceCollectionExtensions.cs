@@ -14,9 +14,7 @@ namespace Forge.Logging.Microsoft
         /// <returns>IServiceCollection</returns>
         public static IServiceCollection AddForgeMicrosoftLogging(this IServiceCollection services)
         {
-            return services
-                .AddSingleton<ILog, MSLog>()
-                .AddSingleton<ILoggerWrapper, MSManager>();
+            return services.AddSingleton<ILoggerWrapper, MSManager>();
         }
 
     }
