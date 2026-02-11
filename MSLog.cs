@@ -62,7 +62,7 @@ namespace Forge.Logging.Microsoft
         /// <param name="exception">The exception.</param>
         public void Debug(string message, Exception exception)
         {
-            mLog.LogDebug(message, exception);
+            mLog.LogDebug(exception, message);
         }
 
         /// <summary>Logs the specified message as a error entry</summary>
@@ -77,7 +77,7 @@ namespace Forge.Logging.Microsoft
         /// <param name="exception">The exception.</param>
         public void Error(string message, Exception exception)
         {
-            mLog.LogError(message, exception);
+            mLog.LogError(exception, message);
         }
 
         /// <summary>Logs the specified message as a fatal/critical entry</summary>
@@ -92,7 +92,7 @@ namespace Forge.Logging.Microsoft
         /// <param name="exception">The exception.</param>
         public void Fatal(string message, Exception exception)
         {
-            mLog.LogCritical(message, exception);
+            mLog.LogCritical(exception, message);
         }
 
         /// <summary>Logs the specified message as a info entry</summary>
@@ -107,7 +107,7 @@ namespace Forge.Logging.Microsoft
         /// <param name="exception">The exception.</param>
         public void Info(string message, Exception exception)
         {
-            mLog.LogInformation(message, exception);
+            mLog.LogInformation(exception, message);
         }
 
         /// <summary>Logs the specified message as a trace entry</summary>
@@ -122,7 +122,7 @@ namespace Forge.Logging.Microsoft
         /// <param name="exception">The exception.</param>
         public void Trace(string message, Exception exception)
         {
-            mLog.LogTrace(message, exception);
+            mLog.LogTrace(exception, message);
         }
 
         /// <summary>Logs the specified message as a warning entry</summary>
@@ -137,7 +137,7 @@ namespace Forge.Logging.Microsoft
         /// <param name="exception">The exception.</param>
         public void Warn(string message, Exception exception)
         {
-            mLog.LogWarning(message, exception);
+            mLog.LogWarning(exception, message);
         }
 
     }
